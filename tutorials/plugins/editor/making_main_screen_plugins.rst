@@ -96,7 +96,7 @@ Add four extra methods such that the script looks like this:
     #endif
 
 The important part in this script is the ``_has_main_screen()`` function,
-which is overloaded so it returns ``true``. This function is automatically
+which is overridden to return ``true``. This function is automatically
 called by the editor on plugin activation, to tell it that this plugin
 adds a new center view to the editor. For now, we'll leave this script
 as-is and we'll come back to it later.
@@ -268,7 +268,7 @@ user clicks on the main viewport buttons at the top of the editor.
 The ``_get_plugin_name()`` and ``_get_plugin_icon()`` functions control
 the displayed name and icon for the plugin's main viewport button.
 
-Another function you can add is the ``handles()`` function, which
+Another function you can add is the ``_handles()`` function, which
 allows you to handle a node type, automatically focusing the main
 screen when the type is selected. This is similar to how clicking
 on a 3D node will automatically switch to the 3D viewport.
