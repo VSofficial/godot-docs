@@ -80,6 +80,7 @@ should be placed in ``libgodot_camera.ios.debug.xcframework`` and
     * **Linux:** ``$HOME/.local/share/godot/export_templates/<version>/``
     * **macOS:** ``$HOME/Library/Application Support/Godot/export_templates/<version>/``
 
+
 The MoltenVK static ``.xcframework`` folder must also be placed in the
 ``apple_embedded_xcode`` folder once it has been created. MoltenVK is always statically
 linked on iOS; there is no dynamic linking option available, unlike macOS.
